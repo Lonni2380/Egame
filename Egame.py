@@ -1,13 +1,16 @@
 import easygui
 
 
-
-while True:
-    antwort = easygui.buttonbox("Wie gehts?","xxx",["Gut!", "Normal!", "Geht so!", "Schlecht!!", "Beenden"],image ="ghost.gif")
+versuche=0
+while True :
+    versuche=versuche+1
+    if versuche>3:
+        break
+    antwort = easygui.buttonbox("Wie gehts?",":)",["Gut!", "Normal!", "Geht so!", "Schlecht!!", "Beenden"],image ="ghost.gif")
     if antwort == "Gut!":
         easygui.msgbox("Freut mich!",image ="gryphon.gif")
     elif antwort == "Normal!":
-        easygui.msgbox("Warum nur Normal?",image ="bat.gif")
+        easygui.msgbox("Warum nur Normal?:)",image ="bat.gif")
     elif antwort == "Geht so!":
         easygui.msgbox("Warum geht so!?",image ="augur.gif")
     elif antwort == "Schlecht!!":
