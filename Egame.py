@@ -8,7 +8,7 @@ while True :
         break
     antwort = easygui.buttonbox("Wie gehts?",":)",["Gut!", "Normal!", "Geht so!", "Schlecht!!", "Beenden"],image ="ghost.gif")
     if antwort == "Gut!":
-        easygui.msgbox("Freut mich!",image ="gryphon.gif")
+        easygui.msgbox("Das freut mich!",image ="gryphon.gif")
     elif antwort == "Normal!":
         easygui.msgbox("Warum nur Normal?:)",image ="bat.gif")
     elif antwort == "Geht so!":
